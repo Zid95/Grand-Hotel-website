@@ -87,8 +87,134 @@ html {
 
 .navigation {
   margin-left: 8rem;
+  position: fixed;
+  width: 40rem;
+  height: 100%;
+  background-image: linear-gradient(to top , rgba(34,32,41,1), rgba(34,32,41,.8)) , url(../images/nav-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.navigation-header {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navigation-heading {
+  font-family: 'Josefin Sans', sans-serif ;
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: .2rem;
+  color: #deaa86;
+  text-align: center;
+}
+
+.navigation-search{
+  position: relative;
+}
+
+.navigation-search-input {
+  width: 30rem;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, .3);
+  font-family: 'Josefin Sans', sans-serif ;
+  font-size: 1.6rem;
+  color:#deaa86 ;
+  letter-spacing: .1rem;
+  outline: none;
+  border: .1rem solid #555;
+  border-radius: 10rem;
+  transition:background-color .3s ;
+}
+
+.navigation-search-input:focus{
+  background-color: rgba(0,0,0,.1);
+}
+
+.navigation-search-btn {
+  border: none;
+  background-color: transparent;
+  color: #deaa86;
+  font-size: 1.7rem;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+}
+
+.navigation-search-btn:focus{
+  outline: none;
+}
+
+.navigation-list{
+  list-style: none;
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-item {
+  position: relative;
+}
+
+.navigation-link {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.navigation-link::before{
+  content: '';
+  width: 0;
+  height: .1rem;
+  background-color: #deaa86;
+  position: absolute;
+  top: 1rem;
+  left: -4rem;
+  transition: width .5s cubic-bezier(1,0,0,1);
+}
+
+
+.navigation-link::after{
+  content: '';
+  width: 0;
+  height: .1rem;
+  background-color: #deaa86;
+  position: absolute;
+  top: 1rem;
+  right: -4rem;
+  transition: width .5s cubic-bezier(1,0,0,1);
+}
+
+.navigation-link:hover{
+  color: #deaa86;
+}
+
+.navigation-link:hover::before ,
+.navigation-link:hover::after {
+  width: 3rem;
+}
+
+
+.copyright {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
 
 /* End Navigation */
 
