@@ -32,6 +32,7 @@ html {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 .menu-icon {
@@ -52,7 +53,7 @@ html {
 
 .line-1 , .line-3 {
   width: 1.8rem;
-  transition: width .3s;
+  transition: all .4s;
 }
 
 .social-icons-list {
@@ -86,8 +87,8 @@ html {
 /* Navigation */
 
 .navigation {
-  margin-left: 8rem;
   position: fixed;
+  left: -32rem;
   width: 40rem;
   height: 100%;
   background-image: linear-gradient(to top , rgba(34,32,41,1), rgba(34,32,41,.8)) , url(../images/nav-bg.jpg);
@@ -98,6 +99,25 @@ html {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  transition: left .8s;
+}
+
+.checkbox:checked ~ .navigation {
+  left: 8rem;
+}
+
+.checkbox:checked ~ .sidebar .line-1 {
+  transform: rotate(-405deg) translate(-5px,6px);
+  width: 2.5rem;
+}
+
+.checkbox:checked ~ .sidebar .line-2 {
+  opacity: 0;
+}
+
+.checkbox:checked ~ .sidebar .line-3 {
+  transform: rotate(405deg) translate(-5px,-6px);
+  width: 2.5rem;
 }
 
 .navigation-header {
