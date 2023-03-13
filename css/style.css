@@ -314,6 +314,9 @@ html {
   transform: translateY(.1rem);
 }
 
+
+/* End Header */
+
 /* About Us */
 
 .about-us {
@@ -424,8 +427,122 @@ html {
   transform: translate(-30%,-30%);
 }
 
-
-
 /* End About Us */
 
-/* End Header */
+/* Common Header */
+
+.common-header {
+  padding: 5rem;
+  text-align: center;
+  color: #b85d1c;
+}
+
+.common-heading {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: .2rem;
+}
+
+.small-underline {
+  width: 9rem;
+  height: .1rem;
+  margin: 3rem auto 1rem auto;
+  background-color:#b85d1c ;
+}
+
+.big-underline {
+  width: 20rem;
+  height: .1rem;
+  margin: auto;
+  background-color:#b85d1c ;
+}
+
+/* End Common Header */
+
+
+/*  Rooms  */
+
+.rooms {
+  margin-left: 8rem;
+}
+
+.rooms-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.room-card {
+  width: 60rem;
+  margin: 5rem;
+  background-color: #15141b;
+  box-shadow: 0 3rem 6rem rgba(0 , 0 , 0 , .3 );
+}
+
+.room-img {
+  width: 100%;
+}
+
+.room-card-content {
+  color: #ddd;
+  padding: 2rem;
+}
+
+.room-card-heading {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.room-card-paragraph {
+  font-size: 1.5rem;
+  color: #777;
+}
+
+.room-price {
+  font-size: 5rem;
+  font-weight: 300;
+  text-align: right;
+}
+
+.room-card-btn {
+  width: 15rem;
+  padding: 1.5rem 1rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2rem;
+  outline: none;
+  text-transform: uppercase;
+  border: none;
+  color: #b85d1c;
+  background-color: transparent;
+  border: .1rem solid #b85d1c;
+  cursor: pointer;
+  border-radius: 10rem;
+}
+
+.rooms-btn-wrapper {
+  text-align: center;
+}
+
+.rooms-btn {
+  width: 20rem;
+  padding: 1.5rem 1rem;
+  margin: 4rem 0;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #b85d1c;
+  outline: none;
+  border: .2rem solid #b85d1c;
+  cursor: pointer;
+  box-shadow: 0 1.5rem 6rem rgba(0 , 0 , 0 , .2);
+  transition:all .2s;
+}
+
+.rooms-btn:hover {
+  color: #ddd;
+  background-color: #b85d1c;
+}
+
+/* End Rooms  */
+
+
+
