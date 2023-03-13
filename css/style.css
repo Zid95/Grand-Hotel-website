@@ -238,6 +238,81 @@ html {
 
 /* End Navigation */
 
-
-
 /*End Navbar */
+
+
+/* Header */
+
+.header {
+  margin-left: 8rem;
+  height: 100vh;
+  background-image:linear-gradient(to top , rgba(0,0,0,.6),rgba(0,0,0,.5)) ,url(../images/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.brand {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.brand img {
+  height: 10rem;
+  width: 10rem;
+}
+
+.hotel-heading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.7rem;
+  font-weight: 400;
+  color: #deaa86;
+  letter-spacing: .2rem;
+}
+
+.banner {
+  color: #ddd;
+  height: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-heading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 7rem;
+  font-weight: 400;
+}
+
+.banner-paragraph {
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+.banner-button {
+  width: 21rem;
+  padding: 1.2rem 2rem;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 1.7rem;
+  letter-spacing: .1rem;
+  border: .1rem solid #deaa86;
+  background-color: transparent;
+  outline: none;
+  background: linear-gradient(to right,#deaa86,#f29c5f);
+  cursor: pointer;
+}
+
+.banner-button:hover {
+  background: linear-gradient(to left,#deaa86,#ec9557);
+}
+
+.banner-button:active {
+  transform: translateY(.1rem);
+}
+
+
+/* End Header */
