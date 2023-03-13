@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif ;
+}
+
+/* font-family: 'Josefin Sans', sans-serif ; */
+
+
+html {
+  /*  10px / 1rem  */
+  font-size: 62.5%;   
+}
+
+
+
+/* Navbar */
+
+/* Sidebar */
+.sidebar {
+  width: 8rem;
+  height: 100%;
+  background-color: #eee;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.menu-icon:hover .line{
+  width: 2.5rem;
+}
+
+.line {
+  height: .2rem;
+  width: 2.5rem;
+  background-color: #222;
+  margin-bottom: .6rem;
+}
+
+.line-1 , .line-3 {
+  width: 1.8rem;
+  transition: width .3s;
+}
+
+.social-icons-list {
+  list-style: none;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social-link {
+  font-size: 2rem;
+  color: #777;
+  transition: color .3s;
+}
+
+
+.social-link:hover {
+  color: #deaa86;
+}
+
+
+.year {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #555;
+}
+/*End Sidebar */
+
+/* Navigation */
+
+.navigation {
+  margin-left: 8rem;
+}
+
+
+/* End Navigation */
+
+
+
+/*End Navbar */
