@@ -314,5 +314,118 @@ html {
   transform: translateY(.1rem);
 }
 
+/* About Us */
+
+.about-us {
+  margin-left: 8rem;
+  display: flex;
+  background-color: #ddd;
+}
+
+.about-us-content {
+  flex: 0 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem;
+}
+
+.about-us-heading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #555;
+}
+
+
+.small-underline {
+  width: 9rem;
+  height: .1rem;
+  margin: 3rem auto 1rem auto;
+  background-color:#b85d1c ;
+}
+
+.big-underline {
+  width: 20rem;
+  height: .1rem;
+  background-color:#b85d1c ;
+}
+
+.sub-heading {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-top: 3rem;
+  letter-spacing: .2rem;
+  color: #b85d1c;
+}
+
+.about-us-paragraph {
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+
+.about-us-btn {
+  width: 15rem;
+  padding: .7rem .5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2rem;
+  outline: none;
+  text-transform: uppercase;
+  border: none;
+  color: #b85d1c;
+  background-color: transparent;
+  border: .1rem solid #b85d1c;
+  cursor: pointer;
+}
+
+.btn-arrow {
+  margin-left: .5rem;
+  transition: margin-left .5s;
+}
+
+.about-us-btn:hover .btn-arrow {
+  margin-left: 1.5rem;
+}
+
+.about-us-images {
+  flex: 1 1 ;
+  position: relative;
+}
+
+.image {
+  width: 32rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, .4);
+  border-radius: .4rem;
+  border: .2rem solid #b85d1c;
+}
+
+.image-1 {
+  transform: translate(-20%,-90%);
+}
+
+.image-2 {
+  transform: translate(-70%,-70%);
+}
+
+.image-3 {
+  transform: translate(-50%,-50%);
+}
+
+.image-4 {
+  transform: translate(-30%,-30%);
+}
+
+
+
+/* End About Us */
 
 /* End Header */
