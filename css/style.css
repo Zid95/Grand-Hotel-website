@@ -32,7 +32,7 @@ html {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
+  z-index: 100;
 }
 
 .menu-icon {
@@ -100,6 +100,7 @@ html {
   justify-content: space-between;
   align-items: center;
   transition: left .8s;
+  z-index: 50;
 }
 
 .checkbox:checked ~ .navigation {
@@ -647,10 +648,158 @@ html {
   font-size: 1.3rem;
   color: #aaa;
 }
-
-
-
-
 /* End Footer */
 
 
+@media(max-width: 1400px) {
+  .main-part {
+    flex-direction: column;
+  }
+  .footer-list {
+    display: flex;
+  }
+
+  .footer-list-item {
+    margin-right: 3rem;
+  }
+}
+
+@media(max-width: 1200px) {
+
+  .about-us {
+    flex-direction: column;
+    padding-bottom: 25rem;
+  }
+
+  .about-us-content{
+    margin-bottom: 13rem;
+  }
+
+  .image {
+    width: 25rem;
+  }
+}
+
+@media(max-width: 993px) {
+  .banner{
+    text-align: center;
+  }
+
+  .banner-heading {
+    font-size: 4.7rem;
+  }
+
+  .banner-paragraph {
+    font-size: 2.6rem;
+  }
+
+  .banner-button {
+    width: 16rem;
+    font-size: 1.5rem;
+  }
+
+}
+
+
+@media(max-width: 750px) {
+
+  .footer-list {
+    display: block;
+  }
+
+  .banner {
+    text-align: center;
+  }
+
+  .banner-heading {
+    font-size: 3.5rem;
+  }
+
+  .banner-paragraph {
+    font-size: 2.1rem;
+  }
+
+  .room-card-heading{
+    font-size: 2.5rem;
+  }
+
+  .room-price {
+    font-size: 2.5rem;
+
+  }
+
+  .common-heading {
+    font-size: 3rem;
+  }
+
+
+}
+
+@media(max-width: 600px){
+  .room-card-btn{
+    width: 13rem;
+    font-size: 1.1rem;
+    padding: .7rem .5rem;
+  }
+}
+
+@media(max-width: 570px) {
+  .room-card {
+    height: calc(100% / 4);
+  }
+
+
+  .room-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+}
+
+@media(max-width: 500px){
+  .navigation {
+    width: 28rem;
+  }
+
+  .navigation-search-input {
+    width: 23rem;
+  }
+
+  .image {
+    width: 18rem;
+  }
+
+  .footer-input {
+    width: 16rem;
+    font-size: 1.4rem;
+  }
+
+  .banner-heading {
+    font-size: 2.1rem;
+  }
+
+}
+
+
+@media(max-width: 520px){
+  .about-us-heading {
+    font-size: 3rem;
+  }
+  .sub-heading {
+    font-size: 2.5rem;
+  }
+
+  .about-us-content {
+    text-align: center;
+    padding: 3rem;
+  }
+
+  .banner-heading {
+    font-size: 3rem;
+  }
+
+
+}
